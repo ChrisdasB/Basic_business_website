@@ -1,82 +1,12 @@
+/* Import fonts from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Staatliches&display=swap');
 
-:root {
-    --main-blue-color: rgb(24, 78, 127);
-    --secondary-blue-color:rgb(21, 181, 255);
-    --main-gray-color:rgb(235, 235, 236);
-    --secondary-gray-color:rgb(245, 245, 245);
-  }
-
-.brand-logo {
-    height: 3.5em;
-    width: auto;
-    z-index: 2;   
-}
-
-.nav-text {
-    font-size: x-large;
-    font-weight: 650;
-    color: var(--main-blue-color);
-}
-
-
-
-.navbar{
-    position: fixed;
-    width: 100vw;
-    z-index:1;
-    background-color: rgb(255, 255, 255);
-}
-
-.nav-item:hover {
-    cursor: pointer;
-}
-
-.start-img-container {
-    height: 100vh;
-    width: auto;
-    background: url('/Images/StartingImage.jpg') no-repeat center fixed;
-    background-size: cover;
-}
-
-.card-head-text {
-    font-size: x-large;
-}
-
-.bg-card {
-    background-color: var(--main-gray-color);
-}
-
-
+/* General */
 html {
     max-width: 100%;
     overflow-x: hidden;
 }
-
-.start-img-text {
-    color: rgb(0, 0, 0);
-}
-
-.start-text-container {
-    height: 100vh;
-    opacity: 0.01;
-}
-
-.start-text {
-    min-height: 20%;    
-    background-color: rgba(0, 0, 0, 0.5);
-    font-size:50px;
-    text-align: center;
-    font-family: 'Ysabeau', sans-serif;
-    display: inline;
-}
-
-.start-text-it {
-    font-size: 90px;
-    color: var(--secondary-blue-color);
-}
-
 .section-header {  
     height:10vh;
     border-style: solid;
@@ -85,36 +15,10 @@ html {
     border-left: none;
     border-right: none;
 }
-
 .section-header h1 {
     color: var(--main-blue-color);
     font-size: 3rem;
 }
-
-.service {
-    background-color:var(--main-gray-color);
-}
-
-.partners {
-    background-color: var(--main-gray-color);
-}
-
-.contact {
-    background-color: white;
-}
-
-.info-container {
-    background-color: var(--main-gray-color);
-}
-
-.info-btn-style {
-    color: black;
-    background-color: rgb(203, 222, 222);
-    border:none;
-    max-width: 60%;    
-    box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.44);
-}
-
 .init-fade-out {
     opacity: 0.05;
 }
@@ -127,72 +31,153 @@ html {
     -ms-animation: fadeIn 5s;
 }
 
+/* Define color variables */
+:root {
+    --main-blue-color: rgb(24, 78, 127);
+    --secondary-blue-color:rgb(21, 181, 255);
+    --main-gray-color:rgb(235, 235, 236);
+    --secondary-gray-color:rgb(245, 245, 245);
+  }
+
+/* NAV */
+.brand-logo {
+    height: 3.5em;
+    width: auto;
+    z-index: 2;   
+}
+.nav-text {
+    font-size: x-large;
+    font-weight: 650;
+    color: var(--main-blue-color);
+}
+.navbar {
+    position: fixed;
+    width: 100vw;
+    z-index:1;
+    background-color: rgb(255, 255, 255);
+}
+.nav-item:hover {
+    cursor: pointer;
+}
+
+/* Section Backgrounds */
+.service {
+    background-color:var(--main-gray-color);
+}
+
+.support {
+    background-color: white;
+}
+
+.partners {
+    background-color: var(--main-gray-color);
+}
+
+.contact {
+    background-color: white;
+}
+
+/* Start */
+.start-img-container {
+    height: 100vh;
+    width: auto;
+    background: url('/Images/StartingImage.jpg') no-repeat center fixed;
+    background-size: cover;
+}
+.start-img-text {
+    color: rgb(0, 0, 0);
+}
+.start-text-container {
+    height: 100vh;
+    opacity: 0.01;
+}
+.start-text {
+    min-height: 20%;    
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size:50px;
+    text-align: center;
+    font-family: 'Ysabeau', sans-serif;
+    display: inline;
+}
+.start-text-it {
+    font-size: 90px;
+    color: var(--secondary-blue-color);
+}
+
+
+/* Services - Service Cards & Info-Boxes */
+.card-head-text {
+    font-size: x-large;
+}
+.bg-card {
+    background-color: var(--main-gray-color);
+}
+.info-container {
+    background-color: var(--main-gray-color);
+}
+
+.info-btn-style {
+    color: black;
+    background-color: rgb(203, 222, 222);
+    border:none;
+    max-width: 60%;    
+    box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.44);
+}
 .img-card-style {
     max-height: 12rem;
     width: auto;
 }
-
 .info-card-text {
     font-weight: 600;
     font-size: large;
     color: rgb(4, 5, 14);
 }
-
 .info-img {
     width: 100px; 
     height: auto;
     margin-top: 1rem;
 }
-
 .info-card {
     background-color: rgb(203, 222, 222);
     border-radius: 10px;
 }
-
 .info-card-header {
     color: rgb(0, 0, 0);
     font-style: italic;
     font-size: 3rem;
 }
-
 .info-card-secondary-header {
     color: var(--main-blue-color);
     border-bottom-style: solid;
     border-color: var(--main-blue-color);
 }
-
 .brand-icon {
     width: 100%;
     height: 100%;
 }
-
 .brand-icon-parent {
     max-width: 100%;
     max-height: auto;
 }
-
 .brand-icon-container {
     width: 100vw;
     height: auto;
 }
-
 .small-icon {
     min-width: 5rem;
     max-width: 5rem;
 }
-
 .small-icon-facebook {
     min-width: 6rem;
     max-width: 6rem;
 }
-
 .small-icon-nav {
     min-width: 3rem;
-    max-width: 3rem;
+    ax-width: 3rem;
 }
 
 
-  
+/* Fade-In animation */
   @keyframes fadeIn {
     0% { opacity: 0.1; }
     100% { opacity: 1; }
