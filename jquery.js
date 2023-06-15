@@ -108,7 +108,7 @@ for(var i = 0; i< okButtons.length; i++)
 
     function ScrollToElement(element) 
     {
-        $('html, body').scrollTop(element.offset().top - offsetY -100);
+        $('html, body').scrollTop(element.offset().top - offsetY -150);
     }
 });
 
